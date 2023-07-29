@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-15/Form</title>
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <h1 id="title">Form</h1>
+                
+                <form id="form">
+                    <div class="row">
+                     <div class="col">
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" placeholder="First Name"><br>
+                     </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="last-name">Last Name:</label><br>
+                            <input type="text" id="last-name" placeholder="Last Name">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="address" placeholder="Address">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="pincode">Pin Code:</label><br>
+                            <input type="number" id="pincode" placeholder="Pin Code">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="gender" id = "gen">Gender:</label><br>
+                            <input type="radio" name="gender" id="male" value="male">Male
+                            <input type="radio" name="gender" id="female" value="female">Female
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="food">Choice of Food:</label><br>
+                            <input type="checkbox" name="food1" id="f1" value="north indian">North indian<br>
+                            <input type="checkbox" name="food1" id="f2" value="south indian">South indian<br>
+                            <input type="checkbox" name="food1" id="f3" value="Chinese">Chinese<br>
+                            <input type="checkbox" name="food1" id="f4"value="Japanese">Japanese<br>
+                            <input type="checkbox" name="food1" id="f5" value="Italian">Italian<br>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="state">State:</label><br>
+                            <input type="text" id="state" placeholder="State">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <label for="country">Country:</label><br>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" id="submit" onclick="collect()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>  
+            
+
+            <div class="col-lg-8 col-sm-12">
+                <P id="description">Temporary Database Table...!</P>
+
+
+                
+                    <table class="table table-striped" id="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Pin Code</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Food</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Country</th>
+                          </tr>
+                        </thead>
+
+                        <tbody id="row">
+                          
+                        </tbody>
+                      </table>
+
+                    
+                    
+            </div>    
+
+            
+
+        </div>
+    </div>
+
+<script src="script.js"></script> 
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>  
+</body>
+
+</html>
